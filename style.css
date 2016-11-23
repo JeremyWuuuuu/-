@@ -1,0 +1,88 @@
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .wrapper {
+      position: relative;
+      margin: 0 auto;
+      width: 512px;
+      height: 384px;
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, .2);
+    }
+    
+    .img-container {
+      position: absolute;
+      width: 2560px;
+      height: 384px;
+    }
+    
+    .img-container img {
+      float: left;
+      margin: 0;
+      padding: 0;
+      width: 512px;
+      height: 384px;
+    }
+    
+    .controller {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      text-align: center;
+    }
+    
+    .control-bar {
+      cursor: pointer;
+      display: inline-block;
+      border-radius: 50%;
+      width: 10px;
+      height: 10px;
+      background: rgba(0, 0, 0, .4);
+      border: 1px solid black;
+    }
+    
+    ul li {
+      padding: 2px;
+      display: inline-block;
+    }
+    
+    .active {
+      background: green;
+    }
+    
+    a {
+      cursor: pointer;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .arrow {
+      display: none;
+      font-size: 35px;
+      position: absolute;
+      transform: translate(0, -50%);
+      height: 40px;
+      width: 40px;
+      background: rgba(0, 0, 0, .3);
+      text-align: center;
+      top: 50%;
+    }
+    
+    .wrapper:hover .arrow {
+      display: block;
+    }
+    
+    .arrow:hover {
+      background: rgba(0, 0, 0, .7);
+    }
+    
+    .left {
+      left: 0;
+    }
+    
+    .right {
+      right: 0;
+    }
