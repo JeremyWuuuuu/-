@@ -82,10 +82,10 @@ window.onload = function () {
   const stop = () => {
     clearInterval(timer);
   }
-  imgBox.addEventListener('mouseover', function () {
+  wrapper.addEventListener('mouseover', function () {
     stop();
   }, false);
-  imgBox.addEventListener('mouseout', function () {
+  wrapper.addEventListener('mouseout', function () {
     play();
   }, false);
   //控制条点击事件
