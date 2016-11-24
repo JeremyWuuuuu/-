@@ -85,12 +85,19 @@ window.onload = function () {
   const stop = () => {
     clearInterval(timer);
   }
+<<<<<<< HEAD
   wrapper.addEventListener('mouseover', function (e) {
     e.stopPropagation();
     stop();
   }, true);
   wrapper.addEventListener('mouseout', function (e) {
     e.stopPropagation();
+=======
+  wrapper.addEventListener('mouseover', function () {
+    stop();
+  }, false);
+  wrapper.addEventListener('mouseout', function () {
+>>>>>>> 720da7cd64f03d8295e8129d181150d2c598e2ae
     play();
   }, true);
   //控制条点击事件
