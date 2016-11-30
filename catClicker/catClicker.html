@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <ul>
+        <li>Baby Cat</li>
+        <li>Hiding Cat</li>
+        <li>Monkey Cat</li>
+        <li>Sleeping Cats</li>
+        <li>Shark Cat</li>
+      </ul>
+    </div>
+    <div class="right">
+      <section class="img-container">
+        <h4>Baby Cat <span></span></h4>
+        <img src="cat.jpg" alt="">
+      </section>
+      <section class="img-container">
+        <h4>Hiding Cat <span></span></h4>
+        <img src="cat2.jpg" alt="">
+      </section>
+      <section class="img-container">
+        <h4>Monkey Cat <span></span></h4>
+        <img src="cat3.jpg" alt="">
+      </section>
+      <section class="img-container">
+        <h4>Sleeping Cats <span></span></h4>
+        <img src="cat4.jpg" alt="">
+      </section>
+      <section class="img-container">
+        <h4>Shark Cat <span></span></h4>
+        <img src="cat5.jpg" alt="">
+      </section>
+    </div>
+  </div>
+</body>
+<script>
+  window.onload = function(){
+    var container = document.querySelector('.container');
+    var lists = document.querySelectorAll('li');
+    var spans = document.querySelectorAll('span');
+    var count = [0, 0, 0, 0, 0];
+    lists.forEach(function(v, i){
+      v.addEventListener('click', function(e){
+        e.stopPropagation();
+        spans[i].innerHTML = ++count[i];;
+      }, false)
+    })
+  }
+</script>
+
+</html>
