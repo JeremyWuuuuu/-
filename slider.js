@@ -3,7 +3,7 @@
  */
 (function (global) {
 
-    /*
+    /**
      * 轮播图函数
      * @param {Object} options - 需要用到的基础变量。
      * @param {HTMLElement} options.container - 图片的装载器。
@@ -19,7 +19,7 @@
      * @param {string} options.activeClass - 底部bar的激活类名
      * @return {void}
      * 使用方法 slider(options);
-     * */
+     */
     var slider = function (options) {
         var container = options.container,
             bars = options.controlBars,
